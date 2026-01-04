@@ -79,12 +79,15 @@ NumberStepperWithFloatingValue(
 ## Component Variants
 
 ### 1. NumberStepper (Default)
+
 Standard stepper with label, value display, and +/- buttons.
 
 ### 2. NumberStepperWithFloatingValue
+
 Includes a large value display, progress bar, and full-width buttons.
 
 ### 3. CompactNumberStepper
+
 Minimal inline layout perfect for space-constrained UIs.
 
 ## Style Configuration
@@ -112,16 +115,16 @@ data class NumberStepperStyle(
 
 ## Parameters
 
-| Parameter | Type | Default | Description |
-|-----------|------|---------|-------------|
-| `label` | String | - | Display label text |
-| `value` | Int | - | Current numeric value |
-| `onValueChange` | (Int) -> Unit | - | Callback when value changes |
-| `min` | Int | 0 | Minimum allowed value |
-| `max` | Int | 100 | Maximum allowed value |
-| `step` | Int | 1 | Increment/decrement amount |
-| `enabled` | Boolean | true | Enable/disable interaction |
-| `style` | NumberStepperStyle | Default | Style configuration |
+| Parameter       | Type               | Default | Description                 |
+| --------------- | ------------------ | ------- | --------------------------- |
+| `label`         | String             | -       | Display label text          |
+| `value`         | Int                | -       | Current numeric value       |
+| `onValueChange` | (Int) -> Unit      | -       | Callback when value changes |
+| `min`           | Int                | 0       | Minimum allowed value       |
+| `max`           | Int                | 100     | Maximum allowed value       |
+| `step`          | Int                | 1       | Increment/decrement amount  |
+| `enabled`       | Boolean            | true    | Enable/disable interaction  |
+| `style`         | NumberStepperStyle | Default | Style configuration         |
 
 ## Use Cases
 
@@ -136,17 +139,18 @@ data class NumberStepperStyle(
 
 ## Comparison with Progress Stepper
 
-| Feature | Number Stepper | Progress Stepper |
-|---------|---------------|------------------|
-| **Purpose** | Adjust numeric values | Multi-step workflows |
-| **UI Pattern** | +/- buttons | Sequential indicators |
-| **Use Case** | Quantities, settings | Forms, checkout, onboarding |
-| **Navigation** | Single value | Multiple steps |
-| **Example** | "Items: 5" with buttons | Step 1 → Step 2 → Step 3 |
+| Feature        | Number Stepper          | Progress Stepper            |
+| -------------- | ----------------------- | --------------------------- |
+| **Purpose**    | Adjust numeric values   | Multi-step workflows        |
+| **UI Pattern** | +/- buttons             | Sequential indicators       |
+| **Use Case**   | Quantities, settings    | Forms, checkout, onboarding |
+| **Navigation** | Single value            | Multiple steps              |
+| **Example**    | "Items: 5" with buttons | Step 1 → Step 2 → Step 3    |
 
 ## Installation
 
 Copy the files to your project:
+
 - `NumberStepper.kt` - Component implementation
 - `NumberStepperScreen.kt` - Demo screen with examples
 
